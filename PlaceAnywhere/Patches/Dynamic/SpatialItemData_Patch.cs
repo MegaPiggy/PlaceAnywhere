@@ -10,8 +10,6 @@ namespace PlaceAnywhere.Patches.Dynamic
         [HarmonyPatch(nameof(SpatialItemData.GetCanBeMoved))]
         public static void GetCanBeMoved_Postfix(ref bool __result)
         {
-            WinchCore.Log.Info("GetCanBeMoved modified");
-
             __result = true;
         }
     }
