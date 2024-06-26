@@ -7,8 +7,7 @@ namespace PlaceAnywhere
     {
         public static void Init()
         {
-            Harmony harmony = new Harmony("com.dredge.PlaceAnywhere");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            new Harmony("sp00ktober.PlaceAnywhere").PatchAll(Assembly.GetExecutingAssembly());
         }
     }
 }
